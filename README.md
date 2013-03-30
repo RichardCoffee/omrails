@@ -1,1 +1,1 @@
-README for the online rails course - PLease ignore this entire repository.  It's just me learning rails.
+README for the online rails course - Please ignore this entire repository.  It's just me learning rails.
