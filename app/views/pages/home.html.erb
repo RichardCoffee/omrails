@@ -1,5 +1,12 @@
 <div class="hero-unit">
   <h1>My omrails project</h1>
-  <p><%=link_to "Home page","http://fast-anchorage-4281.herokuapp.com"%> for the project</p>
-  <p><%=link_to "SignUp Here",'#', class: "btn btn-primary btn-large"%></p>
+  <p>
+    <%=link_to "Home page","http://fast-anchorage-4281.herokuapp.com"%> for the project
+  </p>
+  <% if user_signed_in? %>
+  <% else %>
+    <p>
+      <%=link_to "SignUp Here", new_user_registration_path, class: "btn btn-primary btn-large"%>
+    </p>
+  <% end %>
 </div>
