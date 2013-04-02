@@ -8,14 +8,14 @@ $navbarBackground: white;
 @import 'bootstrap';
 
 body {
-  padding-top: 60px;
+  padding-top:60px;
 }
 
 @import 'bootstrap-responsive';
 
 .navbar-inner {
   @include box-shadow(none !important);
-  border: 0;
+  border:0;
 }
 
 .footer {
@@ -24,4 +24,31 @@ body {
   a {
     color:$gray;
   }
+}
+
+/* Required for jQuery masonry */
+.box {
+  margin:5px;
+  padding:5px;
+  font-size:11px;
+  line-height:1.4em;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:1px 1px 10px #444;
+  -moz-box-shadow:1px 1px 10px #444;
+  box-shadow:1px 1px 10px #444;
+  width:214px;
+}
+
+.box img {
+  display:block;
+  width:100%;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+
+.description {
+  margin:10px 0 5px;
 }
