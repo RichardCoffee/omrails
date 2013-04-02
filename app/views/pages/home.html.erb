@@ -3,8 +3,7 @@
   <p>
     <%=link_to "GitHub page","https://github.com/RichardCoffee/omrails"%> for the project
   </p>
-  <% if user_signed_in? %>
-  <% else %>
+  <% unless user_signed_in? %>
     <p>
       <%=link_to "SignUp Here", new_user_registration_path, class: "btn btn-primary btn-large"%>
     </p>
