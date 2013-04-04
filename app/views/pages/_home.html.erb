@@ -1,1 +1,11 @@
-home.html.erb
+<% unless user_signed_in? %>
+  <div class="hero-unit">
+    <h1>My omrails project</h1>
+    <p>
+      <%=link_to "GitHub page","https://github.com/RichardCoffee/omrails"%> for the project
+    </p>
+    <p>
+      <%=link_to "SignUp Here", new_user_registration_path, class: "btn btn-primary btn-large"%>
+    </p>
+  </div>
+<% end %>
